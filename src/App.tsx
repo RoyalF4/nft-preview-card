@@ -6,14 +6,13 @@ export default function App() {
       <h1 className="sr-only">NFT Preview Card</h1>
       <div className="bg-card-bg mx-auto max-w-96 rounded-2xl p-6">
         <div className="relative">
-          <img
-            className=" mb-8 rounded-xl"
-            src="/images/image-equilibrium.jpg"
-            alt=""
-          />
-          <div className="bg-overlay duration-00 absolute top-0 flex h-full w-full items-center justify-center rounded-xl opacity-0 transition-opacity hover:opacity-100">
-            <img src="/images/icon-view.svg" alt="" />
-          </div>
+          <a className="before:bg-overlay cursor-pointer before:absolute before:flex before:h-full before:w-full before:items-center before:justify-center before:rounded-xl before:opacity-0 before:transition-opacity before:content-[url(/images/icon-view.svg)] before:hover:opacity-100">
+            <img
+              className=" mb-8 rounded-xl "
+              src="/images/image-equilibrium.jpg"
+              alt=""
+            />
+          </a>
         </div>
 
         <a className="hover:text-cyan font-outfit-600 mb-4 block cursor-pointer text-2xl">
