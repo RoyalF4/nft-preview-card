@@ -3,13 +3,20 @@ export default function App() {
     <main className="bg-main-bg  min-h-screen px-6 pt-16 text-white">
       <h1 className="sr-only">NFT Preview Card</h1>
       <div className="bg-card-bg mx-auto max-w-96 rounded-2xl p-6">
-        <img
-          className=" mb-8 rounded-xl"
-          src="/images/image-equilibrium.jpg"
-          alt=""
-        />
+        <div className="relative">
+          <img
+            className=" mb-8 rounded-xl"
+            src="/images/image-equilibrium.jpg"
+            alt=""
+          />
+          <div className="bg-overlay absolute top-0 flex h-full w-full items-center justify-center rounded-xl opacity-0 transition-opacity duration-300 hover:opacity-100">
+            <img src="/images/icon-view.svg" alt="" />
+          </div>
+        </div>
 
-        <h2 className="font-outfit-600 pb-4 text-2xl">Equilibrium #3429</h2>
+        <h2 className="hover:text-cyan font-outfit-600 pb-4 text-2xl">
+          Equilibrium #3429
+        </h2>
         <p className="text-soft-blue text-m pb-6">
           Our Equilibrium collection promotes balance and calm.
         </p>
@@ -27,7 +34,8 @@ export default function App() {
             alt="Jules Wyvern avatar"
           />
           <span className="text-soft-blue">
-            Creation of <span className="text-white">Jules Wyvern</span>
+            Creation of{" "}
+            <span className="hover:text-cyan text-white">Jules Wyvern</span>
           </span>
         </div>
       </div>

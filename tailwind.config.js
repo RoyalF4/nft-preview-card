@@ -15,6 +15,7 @@ export default {
         line: "hsl(215, 32%, 27%)",
         "soft-blue": "hsl(215, 51%, 70%)",
         cyan: "hsl(178, 100%, 50%)",
+        overlay: "hsla(178, 100%, 50%, .5)",
       },
       fontWeight: {
         "outfit-300": "300",
