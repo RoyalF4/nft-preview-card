@@ -1,3 +1,5 @@
+// TODO: make img into a button, change hover effect to
+
 export default function App() {
   return (
     <main className="bg-main-bg  min-h-screen px-6 pt-16 text-white">
@@ -9,14 +11,14 @@ export default function App() {
             src="/images/image-equilibrium.jpg"
             alt=""
           />
-          <div className="bg-overlay absolute top-0 flex h-full w-full items-center justify-center rounded-xl opacity-0 transition-opacity duration-300 hover:opacity-100">
+          <div className="bg-overlay duration-00 absolute top-0 flex h-full w-full items-center justify-center rounded-xl opacity-0 transition-opacity hover:opacity-100">
             <img src="/images/icon-view.svg" alt="" />
           </div>
         </div>
 
-        <h2 className="hover:text-cyan font-outfit-600 pb-4 text-2xl">
+        <a className="hover:text-cyan font-outfit-600 mb-4 block cursor-pointer text-2xl">
           Equilibrium #3429
-        </h2>
+        </a>
         <p className="text-soft-blue text-m pb-6">
           Our Equilibrium collection promotes balance and calm.
         </p>
@@ -35,7 +37,9 @@ export default function App() {
           />
           <span className="text-soft-blue">
             Creation of{" "}
-            <span className="hover:text-cyan text-white">Jules Wyvern</span>
+            <a className="hover:text-cyan cursor-pointer text-white">
+              Jules Wyvern
+            </a>
           </span>
         </div>
       </div>
